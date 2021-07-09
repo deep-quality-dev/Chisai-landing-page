@@ -38,6 +38,7 @@
 
 html,
 body {
+  scroll-behavior: smooth;
   font-family: 'Poppins-Medium';
   font-size: 1rem;
   color: #788992
@@ -130,10 +131,6 @@ a:hover {
   font-size: 1.8rem
 }
 
-/* .welcome-chisai {
-  line-height: 0.8
-} */
-
 .welcome-chisai .token-name {
   position: relative
 }
@@ -185,20 +182,6 @@ a:hover {
   bottom: 0px;
   z-index: -1
 }
-
-/* .chisai-button {
-  padding: 10px 20px;
-  background-color: #d6f8fc;
-  box-shadow: #bbecef 5px 5px;
-  text-decoration: none;
-  border-radius: 25px;
-  color: #f7746b
-}
-
-.chisai-button:hover {
-  border: 5px solid #f7746b;
-  color: #f7746b
-} */
 
 .chisai-btn.buy-now img {
   width: 230px;
