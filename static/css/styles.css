@@ -38,6 +38,7 @@
 
 html,
 body {
+  overflow-x: hidden;
   scroll-behavior: smooth;
   font-family: 'Poppins-Medium';
   font-size: 1rem;
@@ -67,12 +68,17 @@ a:hover {
   padding-left: 0;
 } */
 
+.container2 {
+  width: 100%;
+}
+
 .navigation-navbar {
   position: relative
 }
 
 .navigation-bar {
   padding-left: 85px;
+  padding-right: 85px;
   padding-top: 60px;
   padding-bottom: 30px;
   margin-bottom: 0px
@@ -85,7 +91,8 @@ a:hover {
 .navigation-navbar .background {
   position: absolute;
   top: 0;
-  right: 0
+  right: 0;
+  z-index: -1
 }
 
 .title-1 {
@@ -131,6 +138,9 @@ a:hover {
   font-size: 1.8rem
 }
 
+.home-section {
+}
+
 .welcome-chisai .token-name {
   position: relative
 }
@@ -172,7 +182,14 @@ a:hover {
   padding-bottom: 250px
 }
 
-.home-container::after {
+.home-container .background {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1
+}
+
+/* .home-container::after {
   content: ' ';
   background: url(../img/home/back2.png) no-repeat;
   background-size: auto;
@@ -181,7 +198,7 @@ a:hover {
   position: absolute;
   bottom: 0px;
   z-index: -1
-}
+} */
 
 .chisai-btn.buy-now img {
   width: 230px;
@@ -235,152 +252,160 @@ a:hover {
   height: 38px
 }
 
-.tokenomics-container {
+.tokenomics-section {
   background-color: #6aa7fb;
-  padding-top: 45px;
-  padding-bottom: 80px
+  padding-top: 45px
 }
 
-.tokenomics-container .tokenomics-content {
-  background-color: #fff;
-  width: 1122px;
-  padding: 50px 50px 50px 55px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 60px;
-  position: relative
-}
-
-.tokenomics-container .tokenomics-content.pay {
-  background: white url(../img/tokenomics/cat1.png) no-repeat;
-  background-position: right 130px center;
-  padding-top: 70px
-}
-
-.tokenomics-content .pay-to-hold {
-  width: 50%;
-  padding-top: 50px
-}
-
-.tokenomics-content.pay .swirl {
-  width: 30%;
-  position: absolute;
-  right: -10%;
-  top: -7%
-}
-
-.tokenomics-content.whale {
-  margin-top: 80px
-}
-
-.tokenomics-content.whale .background {
-  position: absolute;
-  right: 25px;
-  top: 0px
-}
-
-.tokenomics-content.whale .title-2 {
-  width: 70%
-}
-
-.tokenomics-content.whale .intro {
-  width: 60%
-}
-
-.live-stats-container {
-  background: #fff url(../img/live-stats/back1.png) no-repeat;
-  width: 100%;
-  min-height: 525px;
-  font-size: 1.5rem;
-  font-weight: 700;
-  padding-bottom: 20px
-}
-
-.live-stats-container .stats {
-  margin-top: 80px
-}
-
-.live-stats-container .stats-value {
-  
-}
-
-.roadmap-container {
-  background: #e29937 url(../img/roadmap/back1.png) no-repeat;
-  background-size: cover;
-  width: 100%;
-  min-height: 2940px;
-  position: relative
-}
-
-.roadmap-container .title-3 {
-  padding-top: 620px;
-  font-size: 6rem;
-  color: #fff
-}
-
-.roadmap-container .roadmap-q3 {
-  position: absolute;
-  left: 95px;
-  top: 890px;
-  width: 480px
-}
-
-.roadmap-container .roadmap-q4 {
-  position: absolute;
-  left: 660px;
-  top: 1380px;
-  width: 480px
-}
-
-.roadmap-container .roadmap-q1 {
-  position: absolute;
-  left: 103px;
-  top: 1835px;
-  width: 480px
-}
-
-.whitepaper-container {
-  background: #fff url(../img/whitepaper/back1.png) no-repeat;
-  background-size: cover;
-  width: 100%;
-  min-height: 825px;
-  position: relative
-}
-
-.whitepaper-container img {
-  transform: translateY(-15%)
-}
-
-.contact-us-container {
-  background-color: #6aa7fb;
-  padding-bottom: 100px
-}
-
-.contact-us-container .contact-us-content {
-  padding: 100px 250px 50px 70px;
-  width: 1020px;
+.tokenomics-pay .container {
+  padding: 70px 50px 50px 50px;
   border-radius: 60px;
   background-color: #fff;
   margin: auto;
   position: relative
 }
 
-.contact-us-container .contact-us-content img.cat {
-  position: absolute;
-  right: -9%;
-  bottom: 0px;
+.tokenomics-pay .pay-to-hold {
+  padding-top: 50px
 }
 
-.contact-us-content label {
+.tokenomics-pay .cat {
+  transform: translateY(-20%)
+}
+
+.tokenomics-pay .swirl {
+  width: 30%;
+  position: absolute;
+  right: -10%;
+  top: -7%
+}
+
+.tokenomics-whale {
+  padding-top: 80px;
+}
+
+.tokenomics-whale .container {
+  padding: 50px;
+  border-radius: 60px;
+  background: #fff;
+  margin: auto;
+  position: relative
+}
+
+.tokenomics-whale .background {
+  min-width: 480px;
+  height: 30px
+}
+
+.tokenomics-whale .background img {
+  position: absolute;
+  right: 25px;
+  top: 0px
+}
+
+.tokenomics-section .footer {
+  padding-top: 80px;
+}
+
+.live-stats-section {
+  background-color: #fff
+}
+
+.live-stats-section .header {
+  position: relative
+}
+
+.live-stats-section .header .title {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 30px
+}
+
+.live-stats-container {
+  padding: 30px;
+  font-size: 1.5rem;
+  font-weight: 700
+}
+
+.live-stats-container .stats {
+  padding-top: 80px
+}
+
+.roadmap-section {
+  background-color: #e29937
+}
+
+.roadmap-section .header {
+}
+
+.roadmap-section .balloon {
+  padding: 70px 30px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  border-radius: 60px;
+  width: 530px
+}
+
+.roadmap-section .roadmap-q3 {
+  padding-top: 130px
+}
+
+.roadmap-section .roadmap-q4 {
+  transform: translateY(-5%)
+}
+
+.roadmap-section .roadmap-q1 {
+  transform: translateY(-10%)
+}
+
+.roadmap-section .footer {
+  padding-top: 80px;
+}
+
+.whitepaper-section {
+  color: #fff;
+}
+
+.whitepaper-section .footer {
+  padding-top: 80px;
+}
+
+.contact-us-section {
+  background-color: #6aa7fb;
+  padding-top: 45px;
+  padding-bottom: 160px
+}
+
+.contact-us-section .container {
+  padding: 100px 70px 50px 70px;
+  border-radius: 60px;
+  margin: auto;
+  background-color: #fff;
+  position: relative
+}
+
+.contact-us-section .label {
   font-size: 2.5rem;
   line-height: 1
 }
 
-.follow-us-container {
-  margin: 80px 50px 50px
+.contact-us-section img.cat {
+  position: absolute;
+  right: -9%;
+  bottom: 0px
 }
 
-.follow-us-container img {
+.follow-us-section {
+  background-color: #fff
+}
+
+.follow-us-section .container2 {
+  margin: 80px 50px
+}
+
+.follow-us-section img {
   width: 68px;
   height: 62px
 }

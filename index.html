@@ -10,10 +10,10 @@
   <link rel="stylesheet" href="static/css/styles.css" />
 </head>
 <body id="landing-page" class="landing-page">
-  <!-- navigation bar start -->
-  <header>
-    <nav class="navigation">
-      <div class="container">
+  <!-- home start -->
+  <div id="home" class="home-section clearfix">
+    <div class="container2">
+      <nav class="navigation">
         <div class="navigation-navbar">
           <ul class="navigation-bar">
             <li class="nav-item">
@@ -36,29 +36,23 @@
             </li>
           </ul>
           <div class="background">
-            <img src="static/img/home/back1.png" />
+            <img src="static/img/home/back1.png" style="width: 100%" />
           </div>
         </div>
-      </div>
-    </nav>
-  </header>
-  <!-- navigation bar end -->
+      </nav>
 
-  <!-- home start -->
-  <div id="home" class="home-section clearfix">
-    <div class="container">
       <div class="home-container row g-0">
         <div class="col-md-6 text-center" class="aos-item" data-aos="fade-up">
           <img src="static/img/home/cat.png" class="cat" />
         </div>
-        <div class="col-md-6">
+        <div class="col-md-5">
           <div class="intro-container">
             <h1 class="welcome-chisai title-1" class="aos-item" data-aos="fade-up">
               <span class="token-name">Chisai</span>
               <br/>
               Doge Coin
             </h1>
-            <p data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" style="padding-right: 60px">
+            <p class="intro" data-aos="fade-left">
               This cute little Doge is ready to take on some big gains! with an experience team behind him, and an integrated smart staking System built in to reward, you gain Chisai Doge Coins juts for holding!
             </p>
             <div data-aos="fade-left">
@@ -89,7 +83,11 @@
             </div>
           </div>
         </div>
-        <div class="follow-us">
+        
+        <div class="background">
+          <img src="static/img/home/back2.png" style="width: 100%" />
+        </div>
+        <!-- <div class="follow-us">
           <div class="">Follow us</div>
           <ul>
             <li class="mr-2">
@@ -113,7 +111,7 @@
               </a>
             </li>
           </ul>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -121,53 +119,67 @@
 
   <!-- tokenomics start -->
   <div id="tokenomics" class="tokenomics-section clearfix">
-    <div class="container">
-      <div class="tokenomics-container">
-        <div class="tokenomics-content pay" data-aos="fade-up">
+    <div class="container2">
+      <div class="tokenomics-pay" data-aos="face-up">
+        <div class="container">
           <h1 class="title-1">
             <div style="font-size: 6rem">Chisai Doge Coin</div>
             <div style="font-size: 7rem">Tokenomics</div>
           </h1>
-          <div class="characteristic mt-4">
-            4% Redistribution to holders
-          </div>
-          <div class="characteristic">
-            1% Burn
-          </div>
-          <div class="characteristic">
-            4% To liquidity
-          </div>
-          <div class="characteristic">
-            Max transaction 2.5T
-          </div>
-          <div class="characteristic">
-            Initial Total Supply 1Q
-          </div>
-          <div class="pay-to-hold">
-            <h2 class="title-2">
-              It Pays to Hold
-            </h2>
-            <div class="intro">
-              $Chisai is a deflationary coin. This means the coin becomes scarece over time. All holders earn more Chisai Dog Coin that is automatically sent to your wallet. This little guy just needs to be loved and held!
+          <div class="row g-0">
+            <div class="col-md-8">
+              <div class="characteristic mt-4">
+                4% Redistribution to holders
+              </div>
+              <div class="characteristic">
+                1% Burn
+              </div>
+              <div class="characteristic">
+                4% To liquidity
+              </div>
+              <div class="characteristic">
+                Max transaction 2.5T
+              </div>
+              <div class="characteristic">
+                Initial Total Supply 1Q
+              </div>
+              <div class="pay-to-hold">
+                <h2 class="title-2">
+                  It Pays to Hold
+                </h2>
+                <div class="intro">
+                  $Chisai is a deflationary coin. This means the coin becomes scarece over time. All holders earn more Chisai Dog Coin that is automatically sent to your wallet. This little guy just needs to be loved and held!
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 cat">
+              <img src="static/img/tokenomics/cat1.png" />
             </div>
           </div>
           <div class="swirl">
             <img src="static/img/tokenomics/blue 3 swirls.svg" />
           </div>
         </div>
-        <div class="tokenomics-content whale" data-aos="fade-up">
-          <div class="anti-wale">
-            <h2 class="title-2">
-              Anti-Whale System
-            </h2>
+      </div>
+
+      <div class="tokenomics-whale" data-aos="face-up">
+        <div class="container">
+          <h2 class="title-2">
+            Anti-Whale System
+          </h2>
+          <div class="d-flex">
             <div class="intro">
               The anti-whale system prohibits anyone from holding more than 5 Trillion Chisai Doge Coins in their wallet. If a wallet holds a 5 Trillion coins, the wallet will not receive any redistribution taxes. This keeps investors safe from large dumps! If multiple wallets are used, the individual will at the very least have to pay more taxes by having to buy and/or sale multiple times. Don't be greedy!
             </div>
-          </div>
-          <div class="background">
-            <img src="static/img/tokenomics/cat2.png" />
+            <div class="background">
+              <img src="static/img/tokenomics/cat2.png" />
+            </div>
           </div>
         </div>
+      </div>
+
+      <div class="footer">
+        <img src="static/img/tokenomics/back.png" width="100%" />
       </div>
     </div>
   </div>
@@ -175,55 +187,45 @@
 
   <!-- live stats start -->
   <div id="live-stats" class="live-stats-section clearfix">
-    <div class="container">
-      <div class="live-stats-container">
-        <h1 class="title-2 text-center" style="padding-top: 370px">
+    <div class="container2">
+      <div class="header">
+        <h1 class="title title-2 text-center">
           <div>Live Stats</div>
         </h1>
-        <div class="row g-0 stats" data-aos="fade-zoom-in" data-aos-delay="300" data-aos-easing="ease-in-back">
+      </div>
+      <div class="live-stats-container">
+        <div class="row g-0" data-aos="fade-zoom-in">
           <div class="col-md-4 text-center">
-            CURRENT PRICE
+            <div class="field">CURRENT PRICE</div>
+            <div class="value">000000000000</div>
           </div>
           <div class="col-md-4 text-center">
-            CURRENT PRICE
+            <div class="field">CURRENT PRICE</div>
+            <div class="value">000000000000</div>
           </div>
           <div class="col-md-4 text-center">
-            HOLDERS
-          </div>
-        </div>
-        <div class="row g-0 stats-value" data-aos="fade-zoom-in" data-aos-delay="300" data-aos-easing="ease-in-back">
-          <div class="col-md-4 text-center">
-            000000000000
-          </div>
-          <div class="col-md-4 text-center">
-            000000000000
-          </div>
-          <div class="col-md-4 text-center">
-            000000000000
+            <div class="field">HOLDERS</div>
+            <div class="value">000000000000</div>
           </div>
         </div>
-        <div class="row g-0 stats" data-aos="fade-zoom-in" data-aos-delay="300" data-aos-easing="ease-in-back">
+
+        <div class="row g-0 stats" data-aos="fade-zoom-in">
           <div class="col-md-4 text-center">
-            INITIAL SUPPLY
+            <div class="field">INITIAL SUPPLY</div>
+            <div class="value">000000000000</div>
           </div>
           <div class="col-md-4 text-center">
-            CURRENT SUPPLY
+            <div class="field">CURRENT SUPPLY</div>
+            <div class="value">000000000000</div>
           </div>
           <div class="col-md-4 text-center">
-            TOKENS BURNED
-          </div>
-        </div>
-        <div class="row g-0" data-aos="fade-zoom-in" data-aos-delay="300" data-aos-easing="ease-in-back">
-          <div class="col-md-4 text-center">
-            000000000000
-          </div>
-          <div class="col-md-4 text-center">
-            000000000000
-          </div>
-          <div class="col-md-4 text-center">
-            000000000000
+            <div class="field">TOKENS BURNED</div>
+            <div class="value">000000000000</div>
           </div>
         </div>
+      </div>
+      <div class="footer">
+        <img src="static/img/live-stats/back2.png" width="100%" />
       </div>
     </div>
   </div>
@@ -231,83 +233,105 @@
 
   <!-- roadmap start -->
   <div id="roadmap" class="roadmap-section clearfix">
-    <div class="container">
-      <div class="roadmap-container">
-        <h1 class="title-3 text-center">
-          <div id="roadmap-link">Roadmap</div>
+    <div class="container2">
+      <div class="header">
+        <h1 class="title-3 text-center" style="color: #fff">
+          <div>Roadmap</div>
         </h1>
-        <div class="roadmap-q3" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-          <h2 class="title-2">
-            Q3 2021
-          </h2>
-          <div class="characteristic" style="margin-top: 30px">
-            Marketing/spread awareness
-          </div>
-          <div class="characteristic">
-            Website launch
-          </div>
-          <div class="characteristic">
-            5000 telegram members
-          </div>
-          <div class="characteristic">
-            Brand development
-          </div>
-          <div class="characteristic">
-            Coinsniper, Coinhunt, Gemfinder, Coinvote
-          </div>
-          <div class="characteristic">
-            Third party audit
-          </div>
-        </div>
-        <div class="roadmap-q4" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
-          <h2 class="title-2">
-            Q4 2021
-          </h2>
-          <div class="characteristic" style="margin-top: 30px">
-            Influencer push
-          </div>
-          <div class="characteristic">
-            Listing on coin gecko
-          </div>
-          <div class="characteristic">
-            Listing on coin market cap
-          </div>
-          <div class="characteristic">
-            10,000 telegram members
-          </div>
-          <div class="characteristic">
-            10,000 holders
-          </div>
-          <div class="characteristic">
-            Donation
+      </div>
+
+      <div class="row g-0 roadmap-q3">
+        <div class="col-md-6">
+          <div class="balloon">
+            <h2 class="title-2">
+              Q3 2021
+            </h2>
+            <div class="characteristic" style="margin-top: 30px">
+              Marketing/spread awareness
+            </div>
+            <div class="characteristic">
+              Website launch
+            </div>
+            <div class="characteristic">
+              5000 telegram members
+            </div>
+            <div class="characteristic">
+              Brand development
+            </div>
+            <div class="characteristic">
+              Coinsniper, Coinhunt, Gemfinder, Coinvote
+            </div>
+            <div class="characteristic">
+              Third party audit
+            </div>
           </div>
         </div>
-        <div class="roadmap-q1" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-          <h2 class="title-2">
-            Q1 2022
-          </h2>
-          <div class="characteristic" style="margin-top: 30px">
-            $Chisai wallet
-          </div>
-          <div class="characteristic">
-            $Chisai Swap
-          </div>
-          <div class="characteristic">
-            NFT market place
-          </div>
-          <div class="characteristic">
-            $Chisai merch
-          </div>
-          <div class="characteristic">
-            Influencers & partnerships
-          </div>
-          <div class="characteristic">
-            CEX listings
-          </div>
-          <div class="characteristic">
-            50,000 + holders
+      </div>
+
+      <div class="row g-0 roadmap-q4">
+        <div class="col-md-6 offset-md-5">
+          <div class="balloon">
+            <h2 class="title-2">
+              Q4 2021
+            </h2>
+            <div class="characteristic" style="margin-top: 30px">
+              Influencer push
+            </div>
+            <div class="characteristic">
+              Listing on coin gecko
+            </div>
+            <div class="characteristic">
+              Listing on coin market cap
+            </div>
+            <div class="characteristic">
+              10,000 telegram members
+            </div>
+            <div class="characteristic">
+              10,000 holders
+            </div>
+            <div class="characteristic">
+              Donation
+            </div>
           </div>
         </div>
+      </div>
+
+      <div class="row g-0 roadmap-q1">
+        <div class="col-md-6">
+          <div class="balloon">
+            <h2 class="title-2">
+              Q1 2022
+            </h2>
+            <div class="characteristic" style="margin-top: 30px">
+              $Chisai wallet
+            </div>
+            <div class="characteristic">
+              $Chisai Swap
+            </div>
+            <div class="characteristic">
+              NFT market place
+            </div>
+            <div class="characteristic">
+              $Chisai merch
+            </div>
+            <div class="characteristic">
+              Influencers & partnerships
+            </div>
+            <div class="characteristic">
+              CEX listings
+            </div>
+            <div class="characteristic">
+              50,000 + holders
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img src="static/img/roadmap/cat.png" />
+        </div>
+      </div>
+
+      <div class="footer">
+        <img src="static/img/roadmap/back1.png" width="100%" />
       </div>
     </div>
   </div>
@@ -315,24 +339,26 @@
 
   <!-- whitepaper start -->
   <div id="whitepaper" class="whitepaper-section clearfix">
-    <div class="container">
-      <div class="whitepaper-container">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-md-6 text-center">
-            <img src="static/img/whitepaper/cat.png" />
-          </div>
-          <div class="col-md-6" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
-            <h1 class="title-3">
-              White-paper
-            </h1>
-            <p class="intro" style="padding: 10px 0">
-              $Chisai believes in doing your homework! Take a look at our white-paper.
-            </p>
-            <a href="#" class="chisai-btn view">
-              <img src="static/img/button/view.svg" />
-            </a>
-          </div>
+    <div class="container2">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-6 text-center">
+          <img src="static/img/whitepaper/cat.png" />
         </div>
+        <div class="col-md-6" data-aos="fade-down">
+          <h1 class="title-3">
+            White-paper
+          </h1>
+          <p class="intro" style="padding: 10px 0">
+            $Chisai believes in doing your homework! Take a look at our white-paper.
+          </p>
+          <a href="#" class="chisai-btn view">
+            <img src="static/img/button/view.svg" />
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer">
+        <img src="static/img/whitepaper/back1.png" width="100%" />
       </div>
     </div>
   </div>
@@ -340,28 +366,32 @@
 
   <!-- contact us start -->
   <div id="contact-us" class="contact-us-section clearfix">
-    <div class="container">
-      <div class="contact-us-container">
-        <div class="contact-us-content">
-          <h1 class="title-3">
-            Contact us
-          </h1>
-          <div class="mb-4">
-            <label for="name" class="label">Name</label>
-            <input type="text" class="form-control" id="name" />
+    <div class="container2">
+      <div class="container" data-aos="face-zoom-in">
+        <div class="row g-0">
+          <div class="col-md-9">
+            <h1 class="title-3">
+              Contact us
+            </h1>
+            <div class="mb-4">
+              <label for="name" class="label">Name</label>
+              <input type="text" class="form-control" id="name" />
+            </div>
+            <div class="mb-4">
+              <label for="email" class="label">Email</label>
+              <input type="text" class="form-control" id="email" />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="label mb-1">Message</label>
+              <textarea class="form-control" id="message" rows="10"></textarea>
+            </div>
+            <a href="#" class="chisai-btn send">
+              <img src="static/img/button/send.svg" />
+            </a>
           </div>
-          <div class="mb-4">
-            <label for="email" class="label">Email</label>
-            <input type="text" class="form-control" id="email" />
+          <div class="col-md-3" style="position: relative">
+            <img src="static/img/contact-us/cat.png" class="cat" />
           </div>
-          <div class="mb-3">
-            <label for="message" class="label mb-1">Message</label>
-            <textarea class="form-control" id="message" rows="10"></textarea>
-          </div>
-          <a href="#" class="chisai-btn send">
-            <img src="static/img/button/send.svg" />
-          </a>
-          <img src="static/img/contact-us/cat.png" class="cat" />
         </div>
       </div>
     </div>
@@ -370,8 +400,8 @@
 
   <!-- follow us start -->
   <div id="follow-us" class="follow-us-section clearfix">
-    <div class="container">
-      <div class="follow-us-container text-center px-5" data-aos="fade-up">
+    <div class="container2">
+      <div class="text-center" data-aos="fade-up">
         <h1 class="title-3">
           Follow us
         </h1>
@@ -397,9 +427,9 @@
             </a>
           </li>
         </ul>
-        <div class="copyright">
+        <!-- <p class="copyright">
           Copyright © 2021 Chisai Doge Coin. All Rights Reserved - Privacy Policy - Terms & Conditions Chisai Doge Coin makes no promises and is not responsible for any losses or errors use at your own risk.
-        </div>
+        </p> -->
       </div>
     </div>
   </div>
