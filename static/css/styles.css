@@ -1,0 +1,400 @@
+/* ================================================
+// ************************************************
+//
+// Chisai CSS
+//
+// ************************************************
+================================================ */
+
+/* a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline
+} */
+
+@font-face {
+  font-family: 'Lapsus-Pro-Bold';
+    src:  url('../fonts/Lapsus-Pro-Bold.ttf.woff') format('woff'),
+    url('../fonts/Lapsus-Pro-Bold.ttf.svg#Lapsus-Pro-Bold') format('svg'),
+    url('../fonts/Lapsus-Pro-Bold.ttf.eot'),
+    url('../fonts/Lapsus-Pro-Bold.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins-Medium';
+  src:url('../fonts/Poppins-Medium.ttf.woff') format('woff'),
+      url('../fonts/Poppins-Medium.ttf.svg#Poppins-Medium') format('svg'),
+      url('../fonts/Poppins-Medium.ttf.eot'),
+      url('../fonts/Poppins-Medium.ttf.eot?#iefix') format('embedded-opentype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fredoka-One';
+  src:url('../fonts/Fredoka-One.ttf.woff') format('woff'),
+      url('../fonts/Fredoka-One.ttf.svg#Fredoka-One') format('svg'),
+      url('../fonts/Fredoka-One.ttf.eot'),
+      url('../fonts/Fredoka-One.ttf.eot?#iefix') format('embedded-opentype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  font-family: 'Poppins-Medium';
+  font-size: 1rem;
+  color: #788992
+}
+
+ol,ul {
+  list-style: none
+}
+
+ol li,ul li {
+  display: inline-block
+}
+
+a {
+  font-family: 'Fredoka-One';
+  color: #f7746b
+}
+
+a.active,
+a:hover {
+  color: #a0cac6
+}
+
+/* .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  padding-right: 0;
+  padding-left: 0;
+} */
+
+.navigation-navbar {
+  position: relative
+}
+
+.navigation-bar {
+  padding-left: 85px;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  margin-bottom: 0px
+}
+
+.navigation-bar .nav-item {
+  font-size: 1.5rem
+}
+
+.navigation-navbar .background {
+  position: absolute;
+  top: 0;
+  right: 0
+}
+
+.title-1 {
+  font-family: 'Lapsus-Pro-Bold';
+  font-size: 7rem;
+  font-weight: 700;
+  line-height: 0.9;
+  color: #f7746b
+}
+
+.title-2 {
+  font-family: 'Lapsus-Pro-Bold';
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #f7746b
+}
+
+.title-3 {
+  font-family: 'Lapsus-Pro-Bold';
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #f7746b
+}
+
+.intro {
+  font-family: 'Poppins-Medium';
+  color: #819199;
+  font-size: 1.25rem;
+  line-height: 1.5
+}
+
+.characteristic {
+  background-image: url(../img/home/heart2.png);
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-position-y: 0px;
+  padding-left: 40px;
+  padding-bottom: 15px;
+  line-height: 1;
+  /* letter-spacing: 1px; */
+  font-size: 1.8rem
+}
+
+/* .welcome-chisai {
+  line-height: 0.8
+} */
+
+.welcome-chisai .token-name {
+  position: relative
+}
+
+.welcome-chisai .token-name::before {
+  content: '';
+  position: absolute;
+  background: url(../img/home/heart1.png) no-repeat;
+  width: 100px; 
+  height: 100px;
+  left: -70px;
+  top: -50px
+}
+
+.welcome-chisai .token-name::after {
+  content: ' ';
+  position: absolute;
+  background: url(../img/home/heart2.png) no-repeat;
+  width: 100px; 
+  height: 100px;
+  right: -150px;
+  top: 0
+}
+
+.intro-container {
+  margin-top: 60px;
+}
+
+.intro-container ul {
+  padding-left: 0px
+}
+
+.intro-container ul li {
+  padding-right: 10px
+}
+
+/* .chisai-button {
+  padding: 10px 20px;
+  background-color: #d6f8fc;
+  box-shadow: #bbecef 5px 5px;
+  text-decoration: none;
+  border-radius: 25px;
+  color: #f7746b
+}
+
+.chisai-button:hover {
+  border: 5px solid #f7746b;
+  color: #f7746b
+} */
+
+/* .chisai-btn.buy-now img {
+  width: 230px;
+  height: 80px
+}
+
+.chisai-btn.live-chart img {
+  width: 190px;
+  height: 60px
+}
+
+.chisai-btn.copy-address img {
+  width: 190px;
+  height: 60px
+}
+
+.chisai-btn.contract-address img {
+  height: 310px;
+  height: 60px
+} */
+
+.home-container {
+  position: relative;
+  padding-bottom: 250px
+}
+
+.home-container::after {
+  content: ' ';
+  background: url(../img/home/back2.png) no-repeat;
+  background-size: auto;
+  width: 100%; 
+  height: 380px;
+  position: absolute;
+  bottom: 0px;
+  z-index: -1
+}
+
+.home-container .follow-us {
+  font-family: 'Lapsus-Pro-Bold';
+  font-size: 40pt;
+  letter-spacing: 5px;
+  line-height: 1;
+  color: #fff;
+  position: absolute;
+  bottom: 45px;
+  left: 63px
+}
+
+.home-container .follow-us ul {
+  font-size: 0;
+  padding-top: 10px;
+  padding-left: 10px
+}
+
+.home-container .follow-us img {
+  width: 41px;
+  height: 38px
+}
+
+.tokenomics-container {
+  background-color: #6aa7fb;
+  padding-top: 45px;
+  padding-bottom: 80px
+}
+
+.tokenomics-container .tokenomics-content {
+  background-color: #fff;
+  width: 1122px;
+  padding: 50px 50px 50px 55px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 60px;
+  position: relative
+}
+
+.tokenomics-container .tokenomics-content.pay {
+  background: white url(../img/tokenomics/cat1.png) no-repeat;
+  background-position: right 130px center;
+  padding-top: 70px
+}
+
+.tokenomics-content .pay-to-hold {
+  width: 50%;
+  padding-top: 50px
+}
+
+.tokenomics-content.pay .swirl {
+  width: 30%;
+  position: absolute;
+  right: -10%;
+  top: -7%
+}
+
+.tokenomics-content.whale {
+  margin-top: 80px
+}
+
+.tokenomics-content.whale .background {
+  position: absolute;
+  right: 25px;
+  top: 0px
+}
+
+.tokenomics-content.whale .title-2 {
+  width: 70%
+}
+
+.tokenomics-content.whale .intro {
+  width: 60%
+}
+
+.live-stats-container {
+  background: #fff url(../img/live-stats/back1.png) no-repeat;
+  width: 100%;
+  min-height: 525px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-bottom: 20px
+}
+
+.live-stats-container .stats {
+  margin-top: 80px
+}
+
+.live-stats-container .stats-value {
+  
+}
+
+.roadmap-container {
+  background: #e29937 url(../img/roadmap/back1.png) no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 2940px;
+  position: relative
+}
+
+.roadmap-container .title-3 {
+  padding-top: 620px;
+  font-size: 6rem;
+  color: #fff
+}
+
+.roadmap-container .roadmap-q3 {
+  position: absolute;
+  left: 95px;
+  top: 890px;
+  width: 480px
+}
+
+.roadmap-container .roadmap-q4 {
+  position: absolute;
+  left: 660px;
+  top: 1380px;
+  width: 480px
+}
+
+.roadmap-container .roadmap-q1 {
+  position: absolute;
+  left: 103px;
+  top: 1835px;
+  width: 480px
+}
+
+.whitepaper-container {
+  background: #fff url(../img/whitepaper/back1.png) no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 825px;
+  position: relative
+}
+
+.whitepaper-container img {
+  transform: translateY(-15%)
+}
+
+.contact-us-container {
+  background-color: #6aa7fb;
+  padding-bottom: 100px
+}
+
+.contact-us-container .contact-us-content {
+  padding: 100px 250px 50px 70px;
+  width: 1020px;
+  border-radius: 60px;
+  background-color: #fff;
+  margin: auto;
+  position: relative
+}
+
+.contact-us-container .contact-us-content img.cat {
+  position: absolute;
+  right: -9%;
+  bottom: 0px;
+}
+
+.contact-us-content label {
+  font-size: 2.5rem;
+  line-height: 1
+}
+
+.follow-us-container {
+  margin: 80px 50px 50px
+}
+
+.follow-us-container img {
+  width: 68px;
+  height: 62px
+}
