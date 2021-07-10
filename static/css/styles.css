@@ -192,17 +192,6 @@ a:hover {
   z-index: -1
 }
 
-/* .home-container::after {
-  content: ' ';
-  background: url(../img/home/back2.png) no-repeat;
-  background-size: auto;
-  width: 100%; 
-  height: 380px;
-  position: absolute;
-  bottom: 0px;
-  z-index: -1
-} */
-
 .chisai-btn.buy-now img {
   width: 230px;
   height: 80px
@@ -223,12 +212,12 @@ a:hover {
 }
 
 .chisai-btn.view img {
-  height: 137px;
+  width: 137px;
   height: 65px
 }
 
 .chisai-btn.send img {
-  height: 137px;
+  width: 137px;
   height: 65px
 }
 
@@ -354,8 +343,53 @@ a:hover {
   padding-top: 130px
 }
 
+.roadmap-section .roadmap-q3 .light-orange-swirl {
+  position: absolute;
+  right: -150px;
+  top: -50px;
+  width: 300px;
+  z-index: -1
+}
+
+.roadmap-section .roadmap-q3 .light-orange-swirl2 {
+  position: absolute;
+  right: 600px;
+  top: 200px;
+  width: 180px;
+  z-index: -1
+}
+
+.roadmap-section .roadmap-q3 .dark-orange-swirl {
+  position: absolute;
+  right: 400px;
+  top: 300px;
+  width: 100px;
+  z-index: -1
+}
+
 .roadmap-section .roadmap-q4 {
   transform: translateY(-5%)
+}
+
+.roadmap-section .roadmap-q4 .light-orange-swirl {
+  position: absolute;
+  left: -150px;
+  top: 120px;
+  width: 300px;
+  z-index: -1
+}
+
+.roadmap-section .roadmap-q4 .dark-orange-swirl {
+  position: absolute;
+  left: 120px;
+  top: 60px;
+  width: 120px;
+  z-index: -1
+}
+
+.roadmap-section .roadmap-q3 {
+  position: relative;
+  padding-top: 130px
 }
 
 .roadmap-section .roadmap-q1 {

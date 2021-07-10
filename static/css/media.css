@@ -18,6 +18,14 @@
     padding-bottom: 20px
   }
 
+  .roadmap-section .roadmap-q3 .light-orange-swirl2 {
+    right: 300px;
+  }
+
+  .roadmap-section .roadmap-q3 .dark-orange-swirl {
+    right: 150px;
+  }
+
   .roadmap-section .roadmap-q4 {
     padding-bottom: 20px
   }
@@ -118,6 +126,18 @@
 }
 
 @media (max-width:576px) {
+  .title-1 {
+    font-size: 3.5rem
+  }
+  
+  .title-2 {
+    font-size: 2.5rem
+  }
+
+  .title-3 {
+    font-size: 3rem
+  }
+  
   .home-container {
     padding-bottom: 100px
   }
@@ -164,13 +184,21 @@
   .tokenomics-pay .cat img {
     width: 200px
   }
+
+  .tokenomics-pay .container {
+    padding: 50px 25px
+  }
+
+  .tokenomics-whale .container {
+    padding: 50px 25px
+  }
   
   .tokenomics-whale .background img {
     width: 200px
   }
 
   .live-stats-section .header .title {
-    bottom: 10px
+    bottom: 0px
   }
   
   .roadmap-section .balloon {
@@ -187,11 +215,15 @@
   }
 
   .chisai-btn.view img {
-    height: 50px;
+    height: 50px
   }
 
   .chisai-btn.send img {
-    height: 50px;
+    height: 50px
+  }
+
+  .contact-us-section .container {
+    padding: 50px 25px;
   }
 }
 
