@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="static/css/bootstrap.min.css" />
   <link rel="stylesheet" href="static/css/aos.css" />
   <link rel="stylesheet" href="static/css/styles.css" />
+  <link rel="stylesheet" href="static/css/media.css" />
 </head>
 <body id="landing-page" class="landing-page">
   <!-- home start -->
@@ -42,10 +43,10 @@
       </nav>
 
       <div class="home-container row g-0">
-        <div class="col-md-6 text-center" class="aos-item" data-aos="fade-up">
+        <div class="col-md-12 col-lg-6 text-center" class="aos-item" data-aos="fade-up">
           <img src="static/img/home/cat.png" class="cat" />
         </div>
-        <div class="col-md-5">
+        <div class="col-md-12 col-lg-5">
           <div class="intro-container">
             <h1 class="welcome-chisai title-1" class="aos-item" data-aos="fade-up">
               <span class="token-name">Chisai</span>
@@ -55,7 +56,7 @@
             <p class="intro" data-aos="fade-left">
               This cute little Doge is ready to take on some big gains! with an experience team behind him, and an integrated smart staking System built in to reward, you gain Chisai Doge Coins juts for holding!
             </p>
-            <div data-aos="fade-left">
+            <div class="chisai-btn-group" data-aos="fade-left">
               <ul>
                 <li>
                   <a href="#" class="chisai-btn buy-now">
@@ -87,7 +88,7 @@
         <div class="background">
           <img src="static/img/home/back2.png" style="width: 100%" />
         </div>
-        <!-- <div class="follow-us">
+        <div class="follow-us">
           <div class="">Follow us</div>
           <ul>
             <li class="mr-2">
@@ -111,7 +112,7 @@
               </a>
             </li>
           </ul>
-        </div> -->
+        </div>
       </div>
     </div>
   </div>
@@ -120,14 +121,14 @@
   <!-- tokenomics start -->
   <div id="tokenomics" class="tokenomics-section clearfix">
     <div class="container2">
-      <div class="tokenomics-pay" data-aos="face-up">
+      <div class="tokenomics-pay" data-aos="fade-up">
         <div class="container">
           <h1 class="title-1">
-            <div style="font-size: 6rem">Chisai Doge Coin</div>
-            <div style="font-size: 7rem">Tokenomics</div>
+            <div>Chisai Doge Coin</div>
+            <div>Tokenomics</div>
           </h1>
           <div class="row g-0">
-            <div class="col-md-8">
+            <div class="col-md-12 col-lg-8">
               <div class="characteristic mt-4">
                 4% Redistribution to holders
               </div>
@@ -152,7 +153,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4 cat">
+            <div class="col-md-12 col-lg-4 cat">
               <img src="static/img/tokenomics/cat1.png" />
             </div>
           </div>
@@ -162,18 +163,16 @@
         </div>
       </div>
 
-      <div class="tokenomics-whale" data-aos="face-up">
+      <div class="tokenomics-whale" data-aos="fade-up">
         <div class="container">
           <h2 class="title-2">
             Anti-Whale System
           </h2>
-          <div class="d-flex">
-            <div class="intro">
-              The anti-whale system prohibits anyone from holding more than 5 Trillion Chisai Doge Coins in their wallet. If a wallet holds a 5 Trillion coins, the wallet will not receive any redistribution taxes. This keeps investors safe from large dumps! If multiple wallets are used, the individual will at the very least have to pay more taxes by having to buy and/or sale multiple times. Don't be greedy!
-            </div>
-            <div class="background">
-              <img src="static/img/tokenomics/cat2.png" />
-            </div>
+          <div class="anti-intro">
+            The anti-whale system prohibits anyone from holding more than 5 Trillion Chisai Doge Coins in their wallet. If a wallet holds a 5 Trillion coins, the wallet will not receive any redistribution taxes. This keeps investors safe from large dumps! If multiple wallets are used, the individual will at the very least have to pay more taxes by having to buy and/or sale multiple times. Don't be greedy!
+          </div>
+          <div class="background">
+            <img src="static/img/tokenomics/cat2.png" />
           </div>
         </div>
       </div>
@@ -195,30 +194,30 @@
       </div>
       <div class="live-stats-container">
         <div class="row g-0" data-aos="fade-zoom-in">
-          <div class="col-md-4 text-center">
+          <div class="col-md-4 text-center stats">
             <div class="field">CURRENT PRICE</div>
             <div class="value">000000000000</div>
           </div>
-          <div class="col-md-4 text-center">
+          <div class="col-md-4 text-center stats">
             <div class="field">CURRENT PRICE</div>
             <div class="value">000000000000</div>
           </div>
-          <div class="col-md-4 text-center">
+          <div class="col-md-4 text-center stats">
             <div class="field">HOLDERS</div>
             <div class="value">000000000000</div>
           </div>
         </div>
 
-        <div class="row g-0 stats" data-aos="fade-zoom-in">
-          <div class="col-md-4 text-center">
+        <div class="row g-0" data-aos="fade-zoom-in">
+          <div class="col-md-4 text-center stats">
             <div class="field">INITIAL SUPPLY</div>
             <div class="value">000000000000</div>
           </div>
-          <div class="col-md-4 text-center">
+          <div class="col-md-4 text-center stats">
             <div class="field">CURRENT SUPPLY</div>
             <div class="value">000000000000</div>
           </div>
-          <div class="col-md-4 text-center">
+          <div class="col-md-4 text-center stats">
             <div class="field">TOKENS BURNED</div>
             <div class="value">000000000000</div>
           </div>
@@ -240,8 +239,8 @@
         </h1>
       </div>
 
-      <div class="row g-0 roadmap-q3">
-        <div class="col-md-6">
+      <div class="row g-0 roadmap-q3" data-aos="fade-down">
+        <div class="col-sm-12 col-md-12 col-lg-6">
           <div class="balloon">
             <h2 class="title-2">
               Q3 2021
@@ -268,8 +267,8 @@
         </div>
       </div>
 
-      <div class="row g-0 roadmap-q4">
-        <div class="col-md-6 offset-md-5">
+      <div class="row g-0 roadmap-q4" data-aos="fade-down">
+        <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-5">
           <div class="balloon">
             <h2 class="title-2">
               Q4 2021
@@ -296,8 +295,8 @@
         </div>
       </div>
 
-      <div class="row g-0 roadmap-q1">
-        <div class="col-md-6">
+      <div class="row g-0 roadmap-q1" data-aos="fade-down">
+        <div class="col-sm-12 col-md-12 col-lg-6">
           <div class="balloon">
             <h2 class="title-2">
               Q1 2022
@@ -325,7 +324,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-sm-12 col-md-12 col-lg-6 cat">
           <img src="static/img/roadmap/cat.png" />
         </div>
       </div>
@@ -340,11 +339,11 @@
   <!-- whitepaper start -->
   <div id="whitepaper" class="whitepaper-section clearfix">
     <div class="container2">
-      <div class="row align-items-center justify-content-center">
-        <div class="col-md-6 text-center">
+      <div class="row align-items-center justify-content-center whitepaper-container">
+        <div class="col-sm-12 col-md-12 col-lg-6 text-center cat">
           <img src="static/img/whitepaper/cat.png" />
         </div>
-        <div class="col-md-6" data-aos="fade-down">
+        <div class="col-sm-12 col-md-12 col-lg-6 view" data-aos="fade-down">
           <h1 class="title-3">
             White-paper
           </h1>
@@ -400,7 +399,7 @@
 
   <!-- follow us start -->
   <div id="follow-us" class="follow-us-section clearfix">
-    <div class="container2">
+    <div class="container2 text-center">
       <div class="container text-center">
         <h1 class="title-3">
           Follow us
